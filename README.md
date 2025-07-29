@@ -26,7 +26,7 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
 ### Train N Binary Models 
-To see if binary classification models perform better for minority classes, we selected three best and worst performing labels based on the F1 score from the baseline model, BERT. The goal here is to see if training a binary model could improve performance on the minority labels.
+To see if binary classification models perform better compared to multi-label classification models, we selected three best and worst performing labels based on the F1 score from the baseline model, BERT. The goal here is to see if training a binary model could improve performance on the minority and low performing labels
 
 #### Per-label Performance for Best and Binary Versions of Each Model (F1 Score)
 
