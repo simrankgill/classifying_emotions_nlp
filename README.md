@@ -28,6 +28,8 @@ We ran five modeling experiments on all four models to see if modern models perf
 ### Train N Binary Models 
 To see if binary classification models perform better for minority classes, we selected three best and worst performing labels based on the F1 score from the baseline model, BERT. The goal here is to see if training a binary model could improve performance on the minority labels.
 
+#### Per-label Performance for Best and Binary Versions of Each Model (F1 Score)
+
 | Label     | BERT (Best) | BERT (Binary) | RoBERTa (Best) | RoBERTa (Binary) | DistilBERT (Best) | DistilBERT (Binary) | DeBERTa (Best) | DeBERTa (Binary) |
 |-----------|-------------|----------------|----------------|------------------|-------------------|----------------------|----------------|-------------------|
 | Love      | **0.7744**  | 0.5986         | 0.7853         | 0.6077           | 0.7798            | 0.6071               | 0.7918         | 0.6059            |
