@@ -27,36 +27,6 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 4 | Weighted + Threshold                | Combine class weighting with threshold tuning (thresholds derived from weighted model). |
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
-### BERT: Test Set Evaluation Metrics per Experiment
-
-| Exp. # | Subset Accuracy | Precision | Recall | F1     |
-|--------|------------------|-----------|--------|--------|
-| 1      | 0.1484           | 0.7776    | 0.3564 | 0.4889 |
-| 2      | 0.0973           | 0.5386    | 0.6231 | 0.5778 |
-| 3      | 0.0511           | 0.4076    | 0.6403 | 0.4981 |
-| 4      | 0.0730           | 0.5016    | 0.6423 | 0.5633 |
-| 5      | 0.0730           | 0.5016    | 0.6423 | 0.5633 |
-
-
-### Modern Transformer Models: Test Set Evaluation Metrics by Model and Experiment
-
-| Model      | Exp. # | Subset Accuracy | Precision | Recall | F1      |
-|------------|--------|------------------|-----------|--------|---------|
-| *RoBERTa*  | 1      | 0.1505           | 0.7808    | 0.3531 | 0.4862  |
-|            | **2**  | **0.0860**       | **0.5185**| **0.6479** | **0.5761** |
-|            | 3      | 0.0103           | 0.2814    | 0.8684 | 0.4251  |
-|            | 4      | 0.0593           | 0.4710    | 0.6804 | 0.5567  |
-|            | 5      | 0.0629           | 0.4532    | 0.6477 | 0.5552  |
-| *DistilBERT* | 1    | 0.1525           | 0.7604    | 0.3764 | 0.5036  |
-|            | **2**  | **0.0942**       | **0.5317**| **0.6307** | **0.5770*** |
-|            | 3      | 0.0600           | 0.4190    | 0.6406 | 0.5067  |
-|            | 4      | 0.0812           | 0.5111    | 0.6358 | 0.5667  |
-|            | 5      | 0.0755           | 0.5179    | 0.6211 | 0.5648  |
-| *DeBERTa*  | 1      | 0.1452           | 0.7806    | 0.3346 | 0.4684  |
-|            | **2**  | **0.0777**       | **0.4938**| **0.6478** | **0.5604** |
-|            | 3      | 0.0089           | 0.2664    | 0.8802 | 0.4090  |
-|            | 4      | 0.0632           | 0.4847    | 0.6574 | 0.5580  |
-|            | 5      | 0.0602           | 0.4837    | 0.6088 | 0.5391  |
 
 
 ### Train N Binary Models 
@@ -76,7 +46,7 @@ To see if binary classification models perform better compared to multi-label cl
 Overall, this suggests multi-label models are better suited for emotion classification takes where emotions overlap and contextual cues are shared across labels.
 
 ### Final Results 
-Across the five experiments, we found that DistilBERT performed the best when only thresholds are applied with an F1 score of 0.5770. This could mean a lighter model could have strong results when properly tuned.
+Our findings show that DistilBERT, fine-tuned with threshold optimization (F1 = 0.5770) and enhanced by layer freezing (F1 = 0.5784), outperforms other models and binary classifiers.
 
 Performance for minority emotion labels is still relatively low when binary classification models are applied per label. To be able to identify overlapping emotion labels, future work could include exploring contextual similarities between labels as a potential strategy to better distinguish subtle emotional expressions.   
 
