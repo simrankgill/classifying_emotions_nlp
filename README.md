@@ -27,7 +27,18 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 4 | Weighted + Threshold                | Combine class weighting with threshold tuning (thresholds derived from weighted model). |
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
-### Test Set Evaluation Metrics by Model and Experiment
+### BERT: Test Set Evaluation Metrics per Experiment
+
+| Exp. # | Subset Accuracy | Precision | Recall | F1     |
+|--------|------------------|-----------|--------|--------|
+| 1      | 0.1484           | 0.7776    | 0.3564 | 0.4889 |
+| 2      | 0.0973           | 0.5386    | 0.6231 | 0.5778 |
+| 3      | 0.0511           | 0.4076    | 0.6403 | 0.4981 |
+| 4      | 0.0730           | 0.5016    | 0.6423 | 0.5633 |
+| 5      | 0.0730           | 0.5016    | 0.6423 | 0.5633 |
+
+
+### Modern Transformer Models: Test Set Evaluation Metrics by Model and Experiment
 
 | Model      | Exp. # | Subset Accuracy | Precision | Recall | F1      |
 |------------|--------|------------------|-----------|--------|---------|
