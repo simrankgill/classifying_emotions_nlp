@@ -67,5 +67,5 @@ Overall, this suggests multi-label models are better suited for emotion classifi
 ### Final Results 
 Across the five experiments, we found that DistilBERT performed the best when only thresholds are applied with an F1 score of 0.5770. This could mean a lighter model could have strong results when properly tuned.
 
-Performance for minority emotion labels is still relatively low when binary classification models are applied per label. To be able to identify overlapping emotion labels, future work could include exploring contextual similarities between labels as a potential strategy to better distinguish subtle emotional expressions. 
+Performance for minority emotion labels is still relatively low when binary classification models are applied per label. To be able to identify overlapping emotion labels, future work could include exploring contextual similarities between labels as a potential strategy to better distinguish subtle emotional expressions.   
 
