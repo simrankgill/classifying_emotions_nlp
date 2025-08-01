@@ -39,9 +39,9 @@ To see if binary classification models perform better compared to multi-label cl
 | Love      | 0.7850      | 0.5938         | 0.7853         | 0.6077           | 0.7794            | 0.6122               | **0.7918**     | 0.6059            |
 | Gratitude | 0.7592      | 0.6032         | 0.7467         | 0.5706           | 0.7546            | 0.6031               | **0.7625**     | 0.5947            |
 | Amusement | 0.7540      | 0.5523         | **0.7638**     | 0.5664           | 0.7480            | 0.5243               | 0.7564         | 0.5435            |
-| Relief    | 0.2625      | 0.1014         | 0.2957         | 0.1536           | **0.2904**        | 0.1084               | 0.2457         | 0.1291            |
+| Relief    | 0.2625      | 0.1014         | **0.2957**     | 0.1536           | 0.2904            | 0.1084               | 0.2457         | 0.1291            |
 | Pride     | 0.1050      | 0.0920         | 0.1642         | 0.0401           | **0.1884**        | 0.0970               | 0.1348         | 0.0823            |
-| Grief     | 0.1596      | 0.0548         | **0.2044**     | 0.0847           | 0.2397            | 0.0672               | 0.1158         | 0.0612            |
+| Grief     | 0.1596      | 0.0548         | 0.2044         | 0.0847           | **0.2397**        | 0.0672               | 0.1158         | 0.0612            |
 
 Overall, this suggests multi-label models are better suited for emotion classification takes where emotions overlap and contextual cues are shared across labels.
 
