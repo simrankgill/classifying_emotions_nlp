@@ -73,7 +73,7 @@ To see if binary classification models perform better compared to multi-label cl
 Overall, this suggests multi-label models are better suited for emotion classification takes where emotions overlap and contextual cues are shared across labels.
 
 ### Final Results 
-Our findings show that Distil BERT, fine-tuned with threshold optimization (F1 = 0.5778) and enhanced by layer freezing (F1 = 0.5798), outperforms other models and binary classifiers.
+Our findings show that DistilBERT, fine-tuned with threshold optimization (F1 = 0.5778) and enhanced by layer freezing (F1 = 0.5798), outperforms other models and binary classifiers.
 
 Performance for minority emotion labels is still relatively low when binary classification models are applied per label. To be able to identify overlapping emotion labels, future work could include exploring contextual similarities between labels as a potential strategy to better distinguish subtle emotional expressions.   
 
