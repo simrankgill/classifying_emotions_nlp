@@ -27,16 +27,34 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 4 | Weighted + Threshold                | Combine class weighting with threshold tuning (thresholds derived from weighted model). |
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
-### Experiment 2: Precision, Recall, and F1 by Model
+### Precision, Recall, and F1 Scores by Model and Experiment
 
-| Model       | Precision | Recall  | F1 Score   |
-|-------------|-----------|---------|------------|
-| BERT        | 0.5274    | 0.6329  | 0.5750     |
-| RoBERTa     | 0.5185    | 0.6479  | **0.5761** |
-| DistilBERT  | 0.5346    | 0.6286  | **0.5778***|
-| DeBERTa     | 0.4938    | 0.6478  | 0.5604     |
+| Model      | Exp | Precision | Recall  | F1 Score   |
+|------------|-----|-----------|---------|------------|
+| **BERT**       | 1   | 0.7778    | 0.3564  | 0.3581     |
+|                | 2   | 0.5274    | 0.6329  | **0.5750*  |
+|                | 3   | 0.4076    | 0.6403  | 0.4981     |
+|                | 4   | 0.5016    | 0.6423  | 0.5633     |
+|                | 5   | 0.5016    | 0.6423  | 0.5633     |
+| **RoBERTa**    | 1   | 0.7808    | 0.3531  | 0.4862     |
+|                | 2   | 0.5185    | 0.6479  | **0.5761** |
+|                | 3   | 0.2814    | 0.8684  | 0.4251     |
+|                | 4   | 0.4710    | 0.6804  | 0.5567     |
+|                | 5   | 0.4532    | 0.6477  | 0.5552     |
+| **DistilBERT** | 1   | 0.7564    | 0.3793  | 0.5053     |
+|                | 2   | 0.5346    | 0.6286  | **0.5778***|
+|                | 3   | 0.4190    | 0.6406  | 0.5067     |
+|                | 4   | 0.5111    | 0.6358  | 0.5667     |
+|                | 5   | 0.5179    | 0.6211  | 0.5648     |
+| **DeBERTa**    | 1   | 0.7806    | 0.3346  | 0.4684     |
+|                | 2   | 0.4938    | 0.6478  |**0.5604**  |
+|                | 3   | 0.2664    | 0.8802  | 0.4090     |
+|                | 4   | 0.4847    | 0.6574  | 0.5580     |
+|                | 5   | 0.4837    | 0.6088  | 0.5391     |
 
-> *Bolded* values represent the highest F1 scores.  
+> **Bolded** F1 scores are the best for each experiment.  
+> *Asterisk* marks the highest F1 score across all models and experiments.
+
 > *Asterisk* indicates the best overall F1 score across all models and experiments.
 
 
