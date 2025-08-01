@@ -27,7 +27,7 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 4 | Weighted + Threshold                | Combine class weighting with threshold tuning (thresholds derived from weighted model). |
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
-### Precision, Recall, and F1 Scores by Model and Experiment
+#### Precision, Recall, and F1 Scores by Model and Experiment
 
 | Model      | Exp | Precision | Recall  | F1 Score   |
 |------------|-----|-----------|---------|------------|
