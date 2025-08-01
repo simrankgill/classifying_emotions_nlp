@@ -27,6 +27,17 @@ We ran five modeling experiments on all four models to see if modern models perf
 | 4 | Weighted + Threshold                | Combine class weighting with threshold tuning (thresholds derived from weighted model). |
 | 5 | Weighted + Threshold + Freezing Layers | Add freezing of lower layers in the model to reduce overfitting and improve generalization. |
 
+### Experiment 2: Precision, Recall, and F1 by Model
+
+| Model       | Precision | Recall  | F1 Score   |
+|-------------|-----------|---------|------------|
+| BERT        | 0.5274    | 0.6329  | 0.5750     |
+| RoBERTa     | 0.5185    | 0.6479  | **0.5761** |
+| DistilBERT  | 0.5346    | 0.6286  | **0.5778***|
+| DeBERTa     | 0.4938    | 0.6478  | 0.5604     |
+
+> *Bolded* values represent the highest F1 scores.  
+> *Asterisk* indicates the best overall F1 score across all models and experiments.
 
 
 ### Train N Binary Models 
