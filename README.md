@@ -7,13 +7,13 @@ This project explores multi-label emotions classifiation on the GoEmitions-105 d
 
 ### Transformer Models Evaluated
 Experimented with four transformer models. 
-
-| Model          | Description                                                              |
+ 
+| Model          | Description                                                               |
 |----------------|---------------------------------------------------------------------------|
-| **BERT**       | Baseline model with bidirectional attention for contextual understanding |
-| **RoBERTa**    | BERT variant with dynamic masking and no next-sentence prediction        |
-| **DistilBERT** | Lightweight, faster version of BERT with 97% performance                 |
-| **DeBERTa**    | Improves attention mechanism by disentangling content and position       |
+| **BERT**       | Baseline model; strong contextual understanding.                          |
+| **RoBERTa**    | Dynamic masking; improved F1 in prior studies.                            |
+| **DistilBERT** | Lightweight; 60% faster with 97% of BERT’s performance.                   |
+| **DeBERTa**    | Advanced attention mechanism; better position/content disentanglement.    |
 
 
 ### Summary of Experiments
