@@ -55,8 +55,6 @@ We ran five modeling experiments on all four models to see if modern models perf
 > **Bolded** F1 scores are the best for each experiment.  
 > *Asterisk* marks the highest F1 score across all models and experiments.
 
-> *Asterisk* indicates the best overall F1 score across all models and experiments.
-
 
 ### Train N Binary Models 
 To see if binary classification models perform better compared to multi-label classification models, we selected three best and worst performing labels based on the F1 score from the baseline model, BERT. The goal here is to see if training a binary model could improve performance on the minority and low performing labels
